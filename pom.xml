@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mypack</groupId>
+  <artifactId>APITest</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <name>APITest Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    
+    <dependency>
+    <groupId>com.sun.jersey</groupId>
+    <artifactId>jersey-server</artifactId>
+    <version>1.8</version>
+</dependency>
+
+<dependency>
+    <groupId>com.sun.jersey</groupId>
+    <artifactId>jersey-json</artifactId>
+    <version>1.8</version>
+</dependency> 
+  </dependencies>
+  <build>
+  
+  <plugins>
+    
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk1.8.0_152\bin\javac.exe</executable>
+            </configuration>
+        </plugin>
+    </plugins>
+    
+    <finalName>APITest</finalName>
+  </build>
+</project>
